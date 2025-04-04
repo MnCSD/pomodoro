@@ -7,7 +7,7 @@ import { cn } from "../lib/utils";
 const LOFI_PLAYLIST = [
   {
     title: "Lofi Chill Beats",
-    url: "/lofi.mp3", // This will load from the public directory
+    url: "https://res.cloudinary.com/dgutk7hvj/video/upload/v1743184336/lofi-sweet-song-265674_o9e9vk.mp3", // This will load from the public directory
   },
 ];
 
@@ -81,7 +81,7 @@ export const AudioPlayer = () => {
           ref={audioRef}
           src={LOFI_PLAYLIST[currentTrack].url}
           onEnded={nextTrack}
-          loop={false}
+          loop={true}
         />
 
         <div className="flex items-center gap-4">
